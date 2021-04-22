@@ -1,0 +1,16 @@
+#Lista{
+  width: 940px;
+  height: auto;
+
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+
+}
+li{
+ display: inline-block;
+}
+.App-header{
+  
+  background-color: #f8f8f8;
+}

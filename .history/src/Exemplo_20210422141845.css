@@ -1,0 +1,31 @@
+.foto-banner{
+width:180px;
+padding: 10px;
+border-radius: 20px;
+margin: 20px;
+text-align: center;
+
+
+}
+.foto{
+  width: 150px;
+  border-radius: 120px;
+  border-style: hidden  ;
+  
+}
+.link{
+  font-weight: bold;
+  color: black;
+}
+.foto-banner:hover{
+
+border: solid 1px black;
+
+
+}
+@media screen {
+  
+  
+}
+
+

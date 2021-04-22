@@ -1,0 +1,41 @@
+.foto-banner{
+width:180px;
+padding: 10px;
+border-radius: 20px;
+margin: 20px;
+text-align: center;
+
+
+}
+.foto{
+  width: 150px;
+  border-radius: 120px;
+  border-style: hidden  ;
+  
+}
+.link{
+  font-weight: bold;
+  color: black;
+}
+.foto-banner:hover{
+
+border: solid 1px black;
+
+
+}
+.list{
+  width: 90vw;
+  max-width: 940px;
+  margin: 5rem;
+  display: grid;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+.foto-banner{
+  grid-template-columns: repeat(3,1fr);
+}
+
+  
+}
+
+

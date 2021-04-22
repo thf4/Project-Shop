@@ -1,0 +1,13 @@
+#Lista{
+  width: 940px;
+  height: auto;
+  display: inline;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+
+}
+.App-header{
+  display: inline-block;
+  background-color: #f8f8f8;
+}

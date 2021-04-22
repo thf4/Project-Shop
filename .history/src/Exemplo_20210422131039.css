@@ -1,0 +1,20 @@
+.foto-banner{
+width: 320px;
+padding: 10px;
+border: 5px;
+margin: 0;
+text-align: center;
+}
+.foto{
+  width: 150px;
+  border-radius: 120px;
+  border-style: hidden  ;
+  border-image-width: 10px;
+}
+.link{
+  font-weight: bold;
+  color: black;
+}
+.foto-banner:hover{
+  border:15px
+}

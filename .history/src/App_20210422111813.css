@@ -1,0 +1,10 @@
+#Lista{
+  width: 940px;
+  height: auto;
+  display: inline;
+  position: relative;
+
+}
+.App-header{
+  background-color: #f8f8f8;
+}
