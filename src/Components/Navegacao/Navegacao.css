@@ -1,0 +1,39 @@
+.foto-banner {
+  width: 180px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+h2 {
+  padding: 10px 50px;
+  margin: 2rem;
+  font-weight: bold;
+  font-size: 30px;
+}
+.foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 120px;
+  border-style: hidden;
+}
+.link {
+  font-weight: bold;
+  color: black;
+}
+.foto-banner:hover {
+  border: solid 1px black;
+}
+.list {
+  width: 90vw;
+  margin: 1rem;
+  padding-left: 100px;
+  display: inline;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.list {
+  grid-template-columns: repeat(7, 1fr);
+}

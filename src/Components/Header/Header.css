@@ -1,57 +1,48 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-
-
-.App{
+.App {
   width: 100%;
   height: auto;
   padding: 20px;
 }
-body{
-  background:#a0171741;
-}
 
-
-#Lista{
+#Lista {
   list-style-type: none;
   margin: 0;
-  
   font-weight: bold;
   text-align: center;
   padding: 50px 50px;
 }
-li{
- display: inline-block;
- font-size: 20px;
- padding: 20px;
- 
+.liheader {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
 }
-li:hover{
+.liheader:hover {
   color: rgb(209, 9, 59);
 }
-#button{
+#button {
   border-radius: 30px;
   border-style: groove;
   border-width: 1px;
   height: 35px;
   width: 150px;
-  padding-bottom:35px;
+  padding-bottom: 35px;
 }
 
-#area-find{
-  padding:20px;
+#area-find {
+  padding: 20px;
   border-radius: 50px;
   height: 40px;
   width: 100%;
 }
-#button:hover{
+#button:hover {
   border-style: hidden;
 }
-.App-header{
-  
+.App-header {
   background-color: #a0171741;
 }

@@ -8,23 +8,23 @@ function Header() {
     <div className="App">
       <header className="App-header">
         <ul id="Lista">
-          <li>🛍</li>
-          <li>
+          <li className="liheader">🛍</li>
+          <li className="liheader">
             <Link to="/">HOME </Link>
           </li>
-          <li> PRODUCTS </li>
-          <li>
+          <li className="liheader"> <Link to="/product">PRODUCTS </Link></li>
+          <li className="liheader">
             <Link to="/aboutus">ABOUT US</Link>
           </li>
-          <li> SHOP 🛒</li>
-          <li>
+          <li className="liheader"> SHOP 🛒</li>
+          <li className="liheader">
             <input
               type="text"
               id="area-find"
               placeholder="search for anything"
             />
           </li>
-          <li>
+          <li className="liheader">
             <form>
               <button id="button" >
                 Search
