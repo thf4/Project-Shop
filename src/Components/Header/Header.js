@@ -1,15 +1,21 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Header.css";
 
-function  Header() {
+function Header() {
   return (
     <div className="App">
       <header className="App-header">
         <ul id="Lista">
           <li>🛍</li>
-          <li> HOME </li>
+          <li>
+            <Link to="/">HOME </Link>
+          </li>
           <li> PRODUCTS </li>
-          <li> ABOUT US</li>
+          <li>
+            <Link to="/aboutus">ABOUT US</Link>
+          </li>
           <li> SHOP 🛒</li>
           <li>
             <input
@@ -20,13 +26,12 @@ function  Header() {
           </li>
           <li>
             <form>
-            <button id="button" for="input">
-              Search
-            </button>
+              <button id="button" >
+                Search
+              </button>
             </form>
           </li>
         </ul>
-     
       </header>
     </div>
   );
