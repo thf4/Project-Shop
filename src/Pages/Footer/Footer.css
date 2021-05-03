@@ -1,5 +1,11 @@
 .rodape {
   background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
-  text-align: center;
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px
+
+}
+.form-footer{
+  margin-left: 25%;
+}
+.h5-footer{
+  margin-left: 50px;
 }

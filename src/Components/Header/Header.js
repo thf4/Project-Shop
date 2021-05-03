@@ -1,38 +1,69 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import "./Header.css";
+} from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-function Header() {
+const Header = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <ul id="Lista">
-          <li className="liheader">🛍</li>
-          <li className="liheader">
-            <Link to="/">HOME </Link>
-          </li>
-          <li className="liheader"> <Link to="/product">PRODUCTS </Link></li>
-          <li className="liheader">
-            <Link to="/aboutus">ABOUT US</Link>
-          </li>
-          <li className="liheader"> SHOP 🛒</li>
-          <li className="liheader">
-            <input
-              type="text"
-              id="area-find"
-              placeholder="search for anything"
-            />
-          </li>
-          <li className="liheader">
-            <form>
-              <button id="button" >
-                Search
-              </button>
-            </form>
-          </li>
-        </ul>
-      </header>
+    <div>
+      <Navbar color="light" light expand="md">
+        <NavbarBrand href="/">HOME</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="#">About</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="#">Product</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Department
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  Sports
+                </DropdownItem>
+                <DropdownItem>
+                  Confort
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  Casual
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <Form inline>
+      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+        <Label for="exampleEmail" className="mr-sm-2">Email</Label>
+        <Input type="email" name="email" id="exampleEmail" placeholder="something@idk.cool" />
+      </FormGroup>
+      <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
+        <Label for="examplePassword" className="mr-sm-2">Password</Label>
+        <Input type="password" name="password" id="examplePassword" placeholder="don't tell!" />
+      </FormGroup>
+      <Button>Submit</Button>
+    </Form>
+        </Collapse>
+      </Navbar>
     </div>
   );
 }

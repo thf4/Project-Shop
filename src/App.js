@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Carrosel from "./Pages/Carrosel/Carrosel";
 import CardProduct from "./Components/CardProdutos/cards";
 import Footer from "./Pages/Footer/Footer";
+import Front from "./Front-Cards/Front";
 const App = () => {
   return (
     <Router>
@@ -21,11 +22,15 @@ const App = () => {
         <Carrosel />
       </Route>
       <Route>
+        <Front />
+      </Route>
+      <Route>
         <CardProduct />
       </Route>
-      <Router>
+      <Route>
         <Footer />
-      </Router>
+      </Route>
+      
     </Router>
   );
 };
